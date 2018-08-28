@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./js/rem.js"></script>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/baicaijia.css">
+  <title>慢慢买</title>
+</head>
+<body>
+  <div class="bacaijia">
+    <div class="mma-header">
+      <a href="javascript:history.go(-1)" class="left"><i class="back"></i></a>
+      白菜价-淘宝内部券
+      <div class="header-Applogo">
+        <img src="./images/header_app.png" alt=""  >
+      </div>
+    </div>  
+     <div class="nav">
+       <ul>
+
+       </ul>
+
+     </div>
+    <!-- //主要内容 -->
+    <div class="content">
+      <ul>
+        <!-- <li>
+          <div class="left">
+            <img src="https://gd2.alicdn.com/imgextra/i2/2551982558/TB2H6XhamiJ.eBjSspiXXbqAFXa_!!2551982558.jpg_400x400.jpg" alt="">
+          </div>
+          <div class="right">
+            <p class="title">[包邮]双十一红包 今日开启</p>
+            <div class="price">
+              <span class="newprice">￥</span><strong> 0.0</strong> 
+              <span class="oldprice">￥0.0</span>
+            </div>
+            <div class="progress">
+              <div class="pro"></div>
+              <span>已领82张</span>
+            </div>
+            <a href="" class='less'>点次领15元优惠券</a>
+            <a href="https://1111.tmall.com" class="link"> 下单链接</a>
+
+          </div>
+        </li> -->
+      </ul>
+    </div>
+  
+  
+  
+     <!-- //底部 -->
+     <div class="mma-footer">
+       <ul class="clearfix">
+         <li><a href="">登录</a></li>
+         <li><a href="">注册</a></li>
+         <li><a href="javascript:;" id='goTop'>
+           <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">
+           返回顶部
+          </a></li>
+       </ul>
+       <p><span class="red">手机APP下载</span> 慢慢买手机版--掌上比价平台</p>
+       <p>m.manmanbuy.com</p>
+     </div> 
+
+
+  </div>
+  <!-- 准备模板 -->
+  <!-- 功能1：nav导航 -->
+  <script type='text/html' id='navTpl'>
+    {{each result v i}}
+    <li><a href="" data-id={{v.titleId}}>{{v.title}}</a></li>
+    {{/each}}
+  </script>
+    
+  <!-- 功能2：列表渲染： -->
+  
+  <script type='text/html' id='listTpl'>
+    {{each result v i}}
+    <li>
+        <div class="left">
+          {{@v.productImg}}
+        </div>
+        <div class="right">
+          {{@v.productName}}
+          <div class='price'>
+          {{@v.productPrice}}
+          </div>
+          {{@v.productCouponRemain}}
+          {{@v.productCoupon}}
+          {{@v.productHref}}
+      </li>
+      {{/each}}
+  
+  
+  </script>
+
+
+
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./js/common.js"></script>
+  <script src='./js/baicaijia.js'></script>
+</body>
+</html>

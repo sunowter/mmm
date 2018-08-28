@@ -1,0 +1,79 @@
+.inlanddiscount {
+  max-width: 7.5rem;
+  min-width: 3.2rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.inlanddiscount .mma-header {
+  font-size: 0.25rem;
+  color: #fff;
+  text-align: center;
+  line-height: 0.8rem;
+  position: relative;
+}
+.inlanddiscount .mma-header .left {
+  position: absolute;
+  left: 0.25rem;
+  top: 0.25rem;
+  height: 0.5rem;
+  width: 0.5rem;
+  font-size: 50px;
+  color: #fff;
+  background: url('../images/icback.svg') no-repeat;
+}
+.inlanddiscount .content {
+  font-size: 0.16rem;
+  margin-bottom: 0.5rem;
+}
+.inlanddiscount .content ul li {
+  width: 50%;
+  float: left;
+  border-bottom: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+}
+.inlanddiscount .content ul li a {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 0.2rem;
+}
+.inlanddiscount .content ul li a img {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  margin: 0 auto;
+}
+.inlanddiscount .content ul li .title {
+  margin-top: 0.1rem;
+  height: 0.5rem;
+  overflow: hidden;
+  font-size: 0.25rem;
+  color: #000;
+  text-align: left;
+  font-weight: 700;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.inlanddiscount .content ul li .price {
+  height: .4rem;
+  font-size: 0.2rem;
+  color: #FF6C00;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.inlanddiscount .content ul li .from {
+  height: 0.4rem;
+  font-size: 0.18rem;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.inlanddiscount .content ul li:nth-child(2n) {
+  border-right: none;
+}
+.inlanddiscount .mma-footer {
+  padding-top: 0;
+}

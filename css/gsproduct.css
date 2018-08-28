@@ -1,0 +1,163 @@
+.gsproduct {
+  max-width: 7.5rem;
+  min-width: 3.2rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.gsproduct .mma-header {
+  font-size: 0.25rem;
+  color: #fff;
+  text-align: center;
+  line-height: 0.8rem;
+  position: relative;
+}
+.gsproduct .mma-header .left {
+  position: absolute;
+  left: 0.25rem;
+  top: 0.25rem;
+  height: 0.5rem;
+  width: 0.5rem;
+  font-size: 50px;
+  color: #fff;
+  background: url('../images/icback.svg') no-repeat;
+}
+.gsproduct .nav {
+  height: 0.5rem;
+  line-height: 0.5rem;
+  position: relative;
+  background-color: #fff;
+  color: #000;
+  font-size: 0.2rem;
+}
+.gsproduct .nav > ul > li {
+  float: left;
+  width: 30%;
+}
+.gsproduct .nav > ul > li a {
+  display: block;
+  height: 0.6rem;
+  width: 100%;
+  text-align: center;
+}
+.gsproduct .nav > ul i {
+  width: 0.4rem;
+  height: 0.4rem;
+  margin-top: 0.2rem;
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024' width='17' height='17'><path fill='#565656' d='M277.44 194.72 528.213333 445.386667 778.88 194.72Z' transform='translate(0, 812) scale(1, -1)'/></svg>");
+}
+.gsproduct .nav > ul .jd {
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  top: 0.5rem;
+  left: 0;
+  display: none;
+}
+.gsproduct .nav > ul .jd li {
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+.gsproduct .nav > ul .jd li a {
+  text-align: left;
+  font-size: 0.24rem;
+  color: #000;
+  height: 0.5rem;
+}
+.gsproduct .nav > ul .area {
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 100%;
+  background-color: #fff;
+  display: none;
+}
+.gsproduct .nav > ul .area li {
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+.gsproduct .nav > ul .area li a {
+  text-align: left;
+  font-size: 0.24rem;
+  color: #000;
+  height: 0.5rem;
+}
+.gsproduct .nav > ul .price {
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 100%;
+  background-color: #fff;
+  display: none;
+}
+.gsproduct .nav > ul .price li {
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+.gsproduct .nav > ul .price li a {
+  text-align: left;
+  font-size: 0.24rem;
+  color: #000;
+  height: 0.5rem;
+}
+.gsproduct .content {
+  background-color: #F1F1F1;
+}
+.gsproduct .content ul {
+  padding: 0 0.2rem;
+}
+.gsproduct .content ul li {
+  float: left;
+  width: 49%;
+  background-color: #fff;
+  margin-top: 0.2rem;
+}
+.gsproduct .content ul li a {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.gsproduct .content ul li a img {
+  margin-top: 0.2rem;
+  width: 2rem;
+  height: 2rem;
+}
+.gsproduct .content ul li a .info {
+  margin-top: 0rem;
+  font-size: 0.16rem;
+  line-height: 0.4rem;
+  height: 0.5rem;
+}
+.gsproduct .content ul li a .product-b {
+  margin-top: 0.3rem;
+  height: 0.7rem;
+  position: relative;
+}
+.gsproduct .content ul li a .product-b .price {
+  position: absolute;
+  font-size: 0.25rem;
+  line-height: 0.4rem;
+  color: red;
+  left: 0.3rem;
+  top: 0.15rem;
+}
+.gsproduct .content ul li a .product-b .buy {
+  position: absolute;
+  right: 0.3rem;
+  top: 0.15rem;
+  height: 0.4rem;
+  width: 0.8rem;
+  text-align: center;
+  line-height: 0.4rem;
+  color: #fff;
+  background-color: #FF9501;
+  border: none;
+}
+.gsproduct .content ul li:nth-child(odd) {
+  margin-right: 2%;
+}
+.gsproduct .mma-footer {
+  padding-top: 0;
+}

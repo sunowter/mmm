@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./js/rem.js"></script>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/sitenav.css">
+  <title>慢慢买</title>
+</head>
+<body>
+  <div class="sitenav">
+    <!-- 头部区域 -->
+    <div class="mma-header">
+      <a href="index.html" class="left"><i class="back"></i></a>
+        凑单品
+      <div class="header-Applogo">
+        <img src="./images/header_app.png" alt=""  >
+      </div>
+    </div>  
+    <!-- //主要内容 -->
+    <div class="content">
+      <ul class="clearfix">
+        <li><a href="">
+          <img src="http://misc.manmanbuy.com/images/hzweb/360.png" alt="">
+          <span>京东商城</span>
+        </a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+      </ul>
+   
+
+
+    </div>
+
+  
+     <!-- //底部 -->
+     <div class="mma-footer">
+       <ul class="clearfix">
+         <li><a href="">登录</a></li>
+         <li><a href="">注册</a></li>
+         <li><a href="javascript:;" id='goTop'>
+           <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">
+           返回顶部
+          </a></li>
+       </ul>
+       <p><span class="red">手机APP下载</span> 慢慢买手机版--掌上比价平台</p>
+       <p>m.manmanbuy.com</p>
+     </div> 
+
+
+  </div>
+  <!-- 准备模板 -->
+
+  <!-- 1、京东店铺模板 -->
+  <script type='text/html' id='navTpl'>
+    {{each result v i}}
+    <li><a href="{{v.navHref}}">
+        <img src="{{v.navImg}}" alt="">
+        <span>{{v.navTitle}}</span>
+      </a></li>
+   {{/each}}
+  </script>
+
+
+
+
+
+
+
+
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/sitenav.js"></script>
+</body>
+</html>

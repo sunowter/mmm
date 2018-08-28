@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/productlist.css">
+  <title>慢慢买</title>
+</head>
+<script src="./js/rem.js"></script>
+<body>
+  <div class="productlist">
+    
+    <div class="mma-header">
+      <div class="header-logo">
+        <img src="./images/header_logo.png" alt="" >
+      </div>
+      <div class="header-Applogo">
+        <img src="./images/header_app.png" alt=""  >
+      </div>
+    </div>
+     <div class="mma-search">
+      <input type="search" name="" id="" placeholder="请输入你想比价的商品">
+      <button>搜索</button>
+    </div>
+    
+    <div class="nav">
+        <script type='text/html' id='navTpl'>
+          <div class="left">
+            {{each result v i}}
+            <a href="index.html">首页></a><a href="category.html">全部分类></a>  <a href="">{{v.category}}></a>
+            {{/each}}
+          </div> 
+          <div class="right">
+            <button>筛选</button>
+          </div>
+        </script>    
+    </div>
+ 
+    <div class="content">
+          <ul>
+        <script type='text/html' id='itemTpl'>
+              {{each result v i}}
+              <li >
+                <a href="productinfo.html?productId={{v.productId}}&brandTitleId={{v.brandTitleId}}" class="item">
+                  <div class="left">
+                    {{@v.productImg}}
+                  </div>
+                  <div class="right">
+                    <p class="title">{{v.productName}}</p>
+                    <p class='price'>{{v.productPrice}}</p>
+                    <p class="memo"><span>{{v.productQuote}}</span> <span>{{v.productCom}}</span></p>
+                  </div>
+  
+              </a>
+            </li>
+            {{/each}}
+            
+            </script>
+          </ul>
+      
+    </div>
+    <div class="page">
+      <button class="prev">上一页</button>
+      <div class="pagenum">
+        <span>1/5</span>
+        <ul class="morepage">
+          <script type='text/html' id='optionTpl'>
+            <%for(var i=1;i<=total;i++){%>
+              <li> <%=i%>/<%=total%></li>
+              
+           <% } %>
+            </script>
+
+        </ul>
+      </div>
+      
+      <button class="next">下一页</button>
+    </div>
+   
+     <div class="mma-footer">
+       <ul class="clearfix">
+         <li><a href="">登录</a></li>
+         <li><a href="">注册</a></li>
+         <li><a href="javascript:;" id='goTop'>
+           <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">
+           返回顶部
+          </a></li>
+       </ul>
+       <p><span class="red">手机APP下载</span> 慢慢买手机版--掌上比价平台</p>
+       <p>m.manmanbuy.com</p>
+     </div> 
+
+
+  </div>
+
+
+
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/productlist.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./js/rem.js"></script>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/savemoney.css">
+  <link rel="stylesheet" href="./css/discount.css">
+  <title>慢慢买</title>
+</head>
+<body>
+  <div class="discount">
+    
+    <div class="mma-header">
+      <a href="javascript:history.go(-1)" class="left"><i class="back"></i></a>
+        国内折扣
+      <div class="header-Applogo">
+        <img src="./images/header_app.png" alt=""  >
+      </div>
+    </div>  
+    <!-- //主要内容 -->
+    <div class="content">
+      <!-- <div class="title">西域美农新疆特产五星和田红枣250g*2</div>
+      <div class="writer">
+        <span >京东商城</span>
+        <span>10-25 14:10</span>
+        <span>小编烟火/慢慢买</span>
+        </div>
+        <img src="http://img10.360buyimg.com/n7/jfs/t1720/256/513904188/195330/ce31e971/55d2cf3eNc2d117d0.jpg" alt="" class="small">
+         <p class="info">原价25.9一斤，凑满5件只要99元价格。 
+           枣子紧实，入口甜爽。适合公司人多的买吧，价格还是不错的。
+        </p>
+        <img src="http://img10.360buyimg.com/n7/jfs/t1720/256/513904188/195330/ce31e971/55d2cf3eNc2d117d0.jpg" alt="" class="big"> -->
+
+    </div>
+    <div class="gotobuy">
+      <div class="list"></div>
+        <a href="" class="buy">前往购买</a>
+    </div>
+    <div class="link">
+      <img src="./images/mmbweixin2.png" alt="">
+
+
+    </div>
+    <div class="comment">
+      <p>发表评论</p>
+      <div class="form">
+        <form action="">
+          <textarea name="" id="" cols="35" rows="5"></textarea>
+        </form>
+        <button>发表评论</button>
+
+      </div>
+      <p>最新评论</p>
+
+    </div>
+  
+  
+     <!-- //底部 -->
+     <div class="mma-footer">
+       <ul class="clearfix">
+         <li><a href="">登录</a></li>
+         <li><a href="">注册</a></li>
+         <li><a href="javascript:;" id='goTop'>
+           <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">
+           返回顶部
+          </a></li>
+       </ul>
+       <p><span class="red">手机APP下载</span> 慢慢买手机版--掌上比价平台</p>
+       <p>m.manmanbuy.com</p>
+     </div> 
+
+
+  </div>
+  <!-- 准备模板 -->
+  <!-- 模板1 -->
+  <script type='text/html' id='productTpl'>
+    {{each result v i }}
+        <div class="title">{{v.productName}}</div>
+        <div class="writer">
+          <span >{{v.productFrom}}</span>
+          <span>{{v.productTime}}</span>
+          <span>{{v.productTips}}</span>
+          </div>
+           {{@v.productImg}}
+           <p class="info">{{v.productInfo}}
+          </p>
+          {{@v.productImg}}
+     {{/each}}
+  </script>
+  <!-- 模板2 -->
+  <!-- <script type='text/html' id='areaTpl'>
+    {{@result[0].productCity}} -->
+  </script>
+  <!-- 模板3 -->
+  <script type='text/html' id='commentTpl'>
+    {{@result[0].productComment}}
+  </script>
+
+
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./js/common.js"></script>
+  <script src='./js/discount.js'></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+.sitenav {
+  max-width: 7.5rem;
+  min-width: 3.2rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.sitenav .mma-header {
+  font-size: 0.25rem;
+  color: #fff;
+  text-align: center;
+  line-height: 0.8rem;
+  position: relative;
+}
+.sitenav .mma-header .left {
+  position: absolute;
+  left: 0.25rem;
+  top: 0.25rem;
+  height: 0.5rem;
+  width: 0.5rem;
+  font-size: 50px;
+  color: #fff;
+  background: url('../images/icback.svg') no-repeat;
+}
+.sitenav .mma-footer {
+  margin-top: 0.2rem;
+  padding-top: 0;
+}
+.sitenav .content ul {
+  padding: 0.2rem 2.5rem 0  0.5rem ;
+}
+.sitenav .content ul li {
+  float: left;
+  margin: 0.05rem;
+}
+.sitenav .content ul li a {
+  padding: 0.1rem 0.2rem;
+  display: block;
+  height: 0.6rem;
+  line-height: 0.4rem;
+  background-color: #F4F4F4;
+  border: 1px solid #ccc;
+  font-size: 0.2rem;
+}

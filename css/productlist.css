@@ -1,0 +1,111 @@
+.productlist {
+  max-width: 7.5rem;
+  min-width: 3.2rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.productlist .nav {
+  height: 0.6rem;
+  font-size: 0.16rem;
+  line-height: 0.5rem;
+  background-image: linear-gradient(#fff, #eee);
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+.productlist .nav .right {
+  height: .5rem;
+  width: 0.7rem;
+}
+.productlist .nav .right button {
+  position: absolute;
+  background-image: linear-gradient(#ccc, #fff);
+  right: 0.2rem;
+  top: 0.05rem;
+  height: .5rem;
+  width: 0.7rem;
+  border-radius: 0.05rem;
+  font-size: 0.14rem;
+}
+.productlist .content ul li a {
+  display: block;
+  width: 100%;
+  padding-left: 1.2rem;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+}
+.productlist .content ul li a .left {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.productlist .content ul li a .left img {
+  width: 1rem;
+}
+.productlist .content ul li a .right {
+  width: 100%;
+  padding: 0.1rem;
+  line-height: 0.3rem;
+}
+.productlist .content ul li a .right p {
+  font-size: 0.16rem;
+}
+.productlist .content ul li a .right .title {
+  height: 0.6rem;
+  overflow: hidden;
+}
+.productlist .content ul li a .right .price {
+  color: red;
+  font-size: 0.16rem;
+}
+.productlist .content ul li a .right .memo {
+  font-size: 0.12rem;
+  color: #ccc;
+}
+.productlist .page {
+  height: 0.5rem;
+  position: relative;
+  font-size: 0.14rem;
+}
+.productlist .page button {
+  width: 1rem;
+  height: 0.4rem;
+  line-height: 0.3rem;
+  position: absolute;
+  font-size: 0.14rem;
+}
+.productlist .page .prev {
+  left: 1rem;
+  top: 0.1rem;
+}
+.productlist .page .next {
+  right: 1rem;
+  top: 0.1rem;
+}
+.productlist .page .pagenum {
+  border: 1px solid #ccc;
+  position: absolute;
+  height: 0.4rem;
+  margin: 0 auto;
+  text-align: center;
+  width: 1rem;
+  left: 50%;
+  top: 0.05rem;
+  margin-left: -0.5rem;
+}
+.productlist .page .pagenum span {
+  background-color: #EEE;
+  line-height: 0.4rem;
+  display: inline-block;
+  height: 0.4rem;
+  width: 1rem;
+}
+.productlist .page .pagenum .morepage {
+  display: none;
+}
+.productlist .page .pagenum .morepage li {
+  border: 1px solid #ccc;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  background-color: #eee;
+}

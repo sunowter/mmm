@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/productinfo.css">
+  <title>慢慢买</title>
+</head>
+<script src="./js/rem.js"></script>
+<body>
+  <div class="productinfo">
+    
+    <div class="mma-header">
+      <div class="header-logo">
+        <img src="./images/header_logo.png" alt="" >
+      </div>
+      <div class="header-Applogo">
+        <img src="./images/header_app.png" alt=""  >
+      </div>
+    </div>
+     <div class="mma-search">
+      <input type="search" name="" id="" placeholder="请输入你想比价的商品">
+      <button>搜索</button>
+    </div>
+    
+    <div class="nav">
+        <script type='text/html' id='navTpl'>
+          <div class="left">
+           
+            <a href="index.html">首页></a><a href="category.html">{{category}}></a>  <a href="">{{productName}}></a>
+      
+          </div> 
+          <div class="right">
+            <button>筛选</button>
+          </div>
+        </script>    
+    </div>
+     <div class="content">
+       <div class="productinfomtiom">
+          <script type='text/html' id='productTpl'>
+            {{each result v i}}
+            <div class="proName">{{v.productName}}</div>
+             {{@v.productImg}}
+             <button class='reserve'>收藏</button>
+            <ul class="clearfix">
+              <li class="compare"><a href="">比较购买</a></li>
+              <li class="parameter "><a href="">产品参数</a></li>
+              <li class='commend'><a href="">评价(2322)</a></li>
+            </ul>
+            <div class="market">
+            
+              {{@v.bjShop}}
+              
+            </div>
+            {{/each}}
+          </script>
+
+
+        </div>
+       <div class="note">
+          * 实际价格以各网站列出的实时售价为准，
+          我们提供的价格可能有数小时至数日的延迟。
+       </div>
+       <div class="appraise">
+         <div class="title"> 网友评价</div>
+         <div class="list">
+           <script type="text/html" id='itemTpl'>  
+            {{each result v i}}
+            <div class="item">
+              <div class="lineone">
+                <div class="user">{{v.comName}}</div>
+                <div class="time">{{v.comTime}}</div>
+              </div>
+              <div class="from">
+                {{v.comFrom}}
+              </div>
+              <div class="text">{{v.comContent}} </div>
+            </div>  
+            {{/each}}  
+          </script>
+
+         </div>
+       </div>
+         <div class="more"><a href="">查看更多评价</a></div>
+      
+       </div>
+
+     <div class="mma-footer">
+        <ul class="clearfix">
+          <li><a href="">登录</a></li>
+          <li><a href="">注册</a></li>
+          <li><a href="javascript:;" id='goTop'>
+            <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">
+            返回顶部
+           </a></li>
+        </ul>
+        <p><span class="red">手机APP下载</span> 慢慢买手机版--掌上比价平台</p>
+        <p>m.manmanbuy.com</p>
+      </div> 
+ 
+
+  </div>
+
+
+
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/productinfo.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+
+.productlist{
+  max-width: 7.5rem;
+  min-width: 3.2rem;
+  width: 100%;
+  margin: 0 auto;
+  .nav{
+    height: 0.6rem;
+    font-size: 0.16rem;
+    line-height: 0.5rem;
+    background-image: linear-gradient(#fff,#eee);
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    .right{
+      height:.5rem;
+      width: 0.7rem;
+      button{
+        position: absolute;
+        background-image: linear-gradient(#ccc,#fff);
+        right: 0.2rem;
+        top:0.05rem;
+        height:.5rem;
+        width: 0.7rem;
+        border-radius: 0.05rem;
+        font-size:0.14rem;
+        // box-shadow: 1px 1px 1px;
+
+      }
+    }
+  }
+  .content{
+    ul{
+      li{
+        a{
+          display: block;
+          // height:1.2rem;
+          width: 100%;
+          padding-left: 1.2rem;
+          position: relative;
+          border-bottom: 1px solid #ccc;
+          .left{
+            position: absolute;
+            left: 0;
+            top:0;
+            img{
+              width: 1rem;
+            }
+          }
+          .right{
+             width: 100%;
+             padding: 0.1rem;
+             line-height: 0.3rem;
+             p{
+               font-size: 0.16rem;
+             }
+             .title{
+               height: 0.6rem;
+               overflow: hidden;
+             }
+             .price{
+               color: red;
+               font-size: 0.16rem;
+             }
+             .memo{
+               font-size: 0.12rem;
+               color: #ccc;
+             }
+      
+          }
+        }
+      }
+    }
+
+  }
+  .page{
+    height: 0.5rem;
+    position: relative;
+    font-size: 0.14rem;
+    button{
+      width: 1rem;
+      height: 0.4rem;
+      line-height: 0.3rem;
+      position: absolute;
+      font-size: 0.14rem;
+      
+    }
+    .prev{
+      left:1rem;
+      top:0.1rem;
+    }
+    .next{
+      right: 1rem;
+      top:0.1rem;
+    }
+    .pagenum{
+      border: 1px solid #ccc;
+      position: absolute;
+      height: 0.4rem;
+      margin:0 auto;
+      text-align: center;
+      width: 1rem;
+      left:50%;
+      top:0.05rem;
+      margin-left: -0.5rem;
+      span{
+          background-color: #EEE;
+          line-height: 0.4rem;
+          display: inline-block;
+          height: 0.4rem;
+          width: 1rem;
+      }
+      .morepage{
+      display: none;
+      
+      li{
+        border: 1px solid #ccc;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        background-color: #eee;
+      }
+      }
+    }
+  
+  }
+
+}

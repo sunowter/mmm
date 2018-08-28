@@ -1,0 +1,212 @@
+body {
+  background-color: #F5F5F5;
+}
+.brand {
+  max-width: 7.5rem;
+  min-width: 3.2rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.brand .nav {
+  padding-left: 0.2rem;
+  height: 0.6rem;
+  font-size: 0.16rem;
+  line-height: 0.5rem;
+  background-image: linear-gradient(#fff, #eee);
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+.brand .nav .right {
+  height: .5rem;
+  width: 0.7rem;
+}
+.brand .nav .right button {
+  position: absolute;
+  background-image: linear-gradient(#ccc, #fff);
+  right: 0.2rem;
+  top: 0.05rem;
+  height: .5rem;
+  width: 0.7rem;
+  border-radius: 0.05rem;
+  font-size: 0.14rem;
+}
+.brand .content {
+  background-color: #fff;
+}
+.brand .content .title {
+  padding-left: 0.2rem;
+  height: 0.6rem;
+  background-color: #EEEEEE;
+  font-size: 0.25rem;
+  line-height: 0.6rem;
+  color: #670E0E;
+  border: 1px solid #ccc;
+}
+.brand .content .title:nth-of-type(2) {
+  margin-top: 0;
+}
+.brand .content .order {
+  font-size: 0.16rem;
+  color: #aaa;
+}
+.brand .content .order li {
+  padding: 0.15rem;
+  height: 0.9rem;
+  border-bottom: 2px solid #ccc;
+}
+.brand .content .order li span {
+  display: inline-block;
+  height: 0.3rem;
+  width: 0.3rem;
+  background-color: #999999;
+  text-align: center;
+  line-height: 0.3rem;
+  margin-right: 0.1rem;
+  color: #fff;
+}
+.brand .content .order li a {
+  font-size: 0.25rem;
+  color: #000;
+}
+.brand .content .order li p {
+  padding-left: 0.4rem;
+}
+.brand .content .num {
+  padding: 0 0.2rem;
+}
+.brand .content .num li a {
+  display: block;
+  width: 100%;
+  padding-left: 1.2rem;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+}
+.brand .content .num li a .left {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.brand .content .num li a .left img {
+  width: 1rem;
+  height: 1rem;
+}
+.brand .content .num li a .right {
+  width: 100%;
+  padding: 0.1rem;
+  line-height: 0.3rem;
+  position: relative;
+}
+.brand .content .num li a .right p {
+  font-size: 0.16rem;
+}
+.brand .content .num li a .right .titl {
+  height: 0.6rem;
+  overflow: hidden;
+}
+.brand .content .num li a .right .price {
+  color: red;
+  font-size: 0.16rem;
+}
+.brand .content .num li a .right .memo {
+  font-size: 0.12rem;
+  color: #ccc;
+}
+.brand .content .num li a .right .star {
+  position: absolute;
+  width: 2rem;
+  height: 0.4rem;
+  background-image: url('../images/star.svg');
+  background-size: 0.4rem 0.4rem;
+  right: 0.2rem;
+  bottom: 0.4rem;
+}
+.brand .content .comment {
+  padding: 0 0.2rem;
+}
+.brand .content .comment li a {
+  display: block;
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+}
+.brand .content .comment li a .left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1.2rem;
+}
+.brand .content .comment li a .left img {
+  width: 1rem;
+  height: 1rem;
+}
+.brand .content .comment li a .right {
+  width: 100%;
+  padding: 0.1rem;
+  padding-left: 1.2rem;
+  line-height: 0.3rem;
+  position: relative;
+  height: 1.2rem;
+}
+.brand .content .comment li a .right p {
+  font-size: 0.20rem;
+  margin-top: 0.3rem;
+}
+.brand .content .comment li a .right .titl {
+  height: 0.6rem;
+  overflow: hidden;
+}
+.brand .content .comment li a .right .price {
+  color: red;
+  font-size: 0.16rem;
+}
+.brand .content .comment li a .right .memo {
+  font-size: 0.12rem;
+  color: #ccc;
+}
+.brand .content .comment li a .context {
+  width: 7rem;
+  border: 2px solid #ccc;
+  background-color: #F8F8F8;
+  margin: 0.2rem auto;
+  font-size: 0.2rem;
+  padding: 0.2rem;
+  position: relative;
+}
+.brand .content .comment li a .context .square {
+  height: 0.3rem;
+  width: 0.3rem;
+  border-top: 2px solid #ccc;
+  border-left: 2px solid #ccc;
+  position: absolute;
+  top: -0.15rem;
+  left: 0.6rem;
+  background-color: #F8F8F8;
+  transform: rotate(45deg);
+}
+.brand .content .comment li a .context .oneline {
+  height: 0.5rem;
+  line-height: 0.5rem;
+  width: 100%;
+}
+.brand .content .comment li a .context .oneline .user {
+  font-size: 0.25rem;
+}
+.brand .content .comment li a .context .oneline .star {
+  display: inline-block;
+  width: 1.5rem;
+  height: 0.3rem;
+  background-image: url('../images/star.svg');
+  background-size: 0.3rem 0.3rem;
+}
+.brand .content .comment li a .context .oneline .time {
+  float: right;
+}
+.brand .content .comment li a .context .text {
+  width: 100%;
+  margin-top: 0.2rem;
+  line-height: 0.3rem;
+}
+.brand .mma-footer {
+  padding-top: 0rem;
+}

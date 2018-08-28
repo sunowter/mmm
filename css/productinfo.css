@@ -1,0 +1,143 @@
+.productinfo {
+  max-width: 7.5rem;
+  min-width: 3.2rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.productinfo .content {
+  font-size: 0.14rem;
+  position: relative;
+}
+.productinfo .content .productinfomtiom {
+  position: relative;
+}
+.productinfo .content .reserve {
+  height: 0.6rem;
+  width: 0.6rem;
+  border-radius: 50%;
+  background-color: #95D800;
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1.2rem;
+  border: none;
+  font-size: 0.2rem;
+  color: #fff;
+}
+.productinfo .content .proName {
+  padding-top: 0.2rem;
+  font-size: 0.18rem;
+  text-align: center;
+  height: 1rem;
+}
+.productinfo .content img {
+  display: block;
+  text-align: center;
+  width: 2rem;
+  margin: 0 auto;
+}
+.productinfo .content ul {
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+  font-size: 0.18rem;
+}
+.productinfo .content ul li {
+  float: left;
+  width: 33.3%;
+  background-color: #FFC830;
+  border-right: 1px solid red;
+}
+.productinfo .content ul li a {
+  display: block;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  text-align: center;
+  font-size: 0.16rem;
+  color: #fff;
+}
+.productinfo .content ul li li:first-child {
+  background-color: #FF9C1C;
+}
+.productinfo .content ul li li:last-child {
+  border-right: none;
+}
+.productinfo .content .market {
+  position: relative;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  border-bottom: 1px solid #ccc;
+}
+.productinfo .content .market table {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.productinfo .content .market table img {
+  width: 0.2rem;
+  margin-top: 0.15rem;
+}
+.productinfo .content .market table .red {
+  position: absolute;
+  right: 1rem;
+}
+.productinfo .content .market table td:first-child {
+  position: absolute;
+  left: 0.2rem;
+  top: 0.1rem;
+}
+.productinfo .content .market table td:nth-child(2) {
+  position: absolute;
+  left: 0.45rem;
+}
+.productinfo .content .market table td:last-child span {
+  width: .8rem;
+  font-size: 0.16rem;
+}
+.productinfo .content .note {
+  padding-top: 0.1rem;
+  padding-left: 0.2rem;
+  font-size: 0.14rem;
+  color: #666;
+}
+.productinfo .content .appraise {
+  font-size: 0.14rem;
+  color: #666;
+}
+.productinfo .content .appraise .title {
+  padding-left: 0.2rem;
+  height: 0.5rem;
+  text-align: center;
+  font-size: 0.18rem;
+  background-color: #DBDBDB;
+  border-top: 3px solid #666666;
+  line-height: 0.5rem;
+}
+.productinfo .content .appraise .item {
+  padding-left: 0.2rem;
+  border-bottom: 1px solid #ccc;
+}
+.productinfo .content .appraise .item .lineone {
+  height: 0.3rem;
+  line-height: 0.3rem;
+}
+.productinfo .content .appraise .item .lineone .user {
+  float: left;
+}
+.productinfo .content .appraise .item .lineone .time {
+  float: right;
+}
+.productinfo .content .appraise .item .from {
+  height: 0.3rem;
+  text-align: right;
+  line-height: 0.3rem;
+}
+.productinfo .content .more {
+  height: 0.5rem;
+  line-height: 0.5rem;
+  text-align: center;
+  background-color: #E5E5E5;
+  color: #000;
+  font-size: 0.2rem;
+  width: 90%;
+  margin: 0.1rem auto;
+  border-radius: 0.1rem;
+}

@@ -1,0 +1,51 @@
+.coupon {
+  max-width: 7.5rem;
+  min-width: 3.5rem;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 0.14rem;
+}
+.coupon .mma-header {
+  font-size: 0.3rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  line-height: 0.8rem;
+  position: relative;
+  background-color: #F4483E;
+}
+.coupon .mma-header .left {
+  position: absolute;
+  left: 0.25rem;
+  top: 0.25rem;
+  height: 0.5rem;
+  width: 0.5rem;
+  font-size: 50px;
+  color: #fff;
+  background: url('../images/icback.svg') no-repeat;
+}
+.coupon .mma-footer {
+  padding-top: 0;
+  margin-top: 0.5rem;
+}
+.coupon .content ul {
+  padding: 0.2rem;
+}
+.coupon .content ul li {
+  float: left;
+  width: 32%;
+  margin-left: 1%;
+}
+.coupon .content ul li a {
+  padding-top: 0.2rem;
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  text-align: center;
+  height: 1.4rem;
+  margin-top: 0.05rem;
+}
+.coupon .content ul li a img {
+  height: 0.8rem;
+  width: 0.8rem;
+}

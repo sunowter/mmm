@@ -1,0 +1,227 @@
+.mma {
+  max-width: 7.5rem;
+  min-width: 3.2rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.mma .mma-header {
+  height: 0.8rem;
+  background-color: #FF841D;
+  width: 7.5rem;
+}
+.mma .mma-header .header-logo {
+  float: left;
+  margin-top: 0.05rem;
+  height: 0.6rem;
+  width: 4rem;
+  position: relative;
+}
+.mma .mma-header .header-logo img {
+  position: absolute;
+  left: 0.1rem;
+  top: 0.2rem;
+  height: 0.4em;
+}
+.mma .mma-header .header-Applogo {
+  margin-top: 0.15rem;
+  float: right;
+  height: 0.5rem;
+  width: 0.5rem;
+  position: relative;
+}
+.mma .mma-header .header-Applogo img {
+  position: absolute;
+  right: 0.1rem;
+  top: 0;
+  height: 0.5rem;
+}
+.mma .mma-search {
+  height: 0.85rem;
+  width: 100%;
+  text-align: center;
+  padding-right: 100px;
+  position: relative;
+}
+.mma .mma-search input {
+  position: absolute;
+  left: 0.2rem;
+  top: 0.1rem;
+  width: 6.35rem;
+  height: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: #F1F1F1;
+  color: #666;
+  font-size: 0.22rem;
+  padding-left: 0.3rem;
+  line-height: 0.3rem;
+  margin-bottom: 0.25rem;
+}
+.mma .mma-search button {
+  position: absolute;
+  right: 0;
+  top: 0.1rem;
+  height: 0.5rem;
+  width: 0.9rem;
+  border-radius: 0.25rem;
+  background-color: #FF841D;
+  color: #fff;
+  font-size: 0.16rem;
+  line-height: 0.4rem;
+}
+.mma .mma-search .space {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0.15rem;
+  background-color: #F1F1F1;
+}
+.mma .mma-nav {
+  width: 100%;
+}
+.mma .mma-nav ul {
+  width: 100%;
+  padding-top: 0.15rem;
+}
+.mma .mma-nav ul li {
+  float: left;
+  width: 25%;
+}
+.mma .mma-nav ul li a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 0.16rem;
+}
+.mma .mma-nav ul li a img {
+  height: 0.6rem;
+  width: 0.6rem;
+}
+.mma .mma-nav ul li a p {
+  margin: 0.1rem 0;
+}
+.mma .mma-nav ul li.hide {
+  display: none;
+}
+.mma .mma-nav .nav-space {
+  width: 100%;
+  height: .1rem;
+  background-color: #F1F1F1;
+}
+.mma .mma-recommend .header {
+  height: 0.5rem;
+  width: 100%;
+  line-height: 0.5rem;
+  background-color: #FF841D;
+  color: #fff;
+  font-size: 0.20rem;
+  padding-left: 0.30rem;
+}
+.mma .mma-recommend .header img {
+  height: 0.30rem;
+  width: 0.30rem;
+  margin-top: 0.15rem;
+  margin-right: 0.20rem;
+}
+.mma .mma-recommend .content ul li {
+  border-bottom: 0.01rem solid #ccc;
+}
+.mma .mma-recommend .content ul li a {
+  padding: 0.1rem;
+  display: block;
+  width: 100%;
+  padding-left: 1rem;
+  position: relative;
+}
+.mma .mma-recommend .content ul li a .left {
+  position: absolute;
+  left: 0;
+  width: 1rem;
+}
+.mma .mma-recommend .content ul li a .left img {
+  width: 1rem;
+}
+.mma .mma-recommend .content ul li a .right {
+  height: 100%;
+  overflow: hidden;
+  padding-left: 0.2rem;
+  padding-top: 0.15rem;
+  position: relative;
+}
+.mma .mma-recommend .content ul li a .right p {
+  font-size: 0.18rem;
+  height: 0.6rem;
+  line-height: 0.3rem;
+}
+.mma .mma-recommend .content ul li a .right .from {
+  height: 0.2rem;
+  font-size: 0.12rem;
+}
+.mma .mma-recommend .content ul li a .right .price {
+  color: red;
+}
+.mma .mma-recommend .content ul li a .right .comment {
+  float: right;
+}
+.mma .mma-discount {
+  font-size: 0.14rem;
+  height: .6rem;
+  padding: .1rem;
+}
+.mma .mma-discount a {
+  display: block;
+  height: .4rem;
+  width: 7.1rem;
+  line-height: .4rem;
+  text-align: center;
+  color: #000;
+  border: 0.01rem solid #ccc;
+}
+.mma .mma-discount a p {
+  font-size: 0.14rem;
+}
+.mma .mma-order {
+  font-size: 0.14rem;
+  background-color: #FF841D;
+  height: .4rem;
+  width: 100%;
+  line-height: .4rem;
+  color: #fff;
+  padding: 0 .2rem;
+}
+.mma .mma-order img {
+  height: .2rem;
+  width: .2rem;
+  margin-top: .1rem;
+}
+.mma .mma-footer {
+  font-size: 0.14rem;
+  padding-top: .2rem;
+}
+.mma .mma-footer ul {
+  margin-bottom: .2rem;
+  border-top: 0.01rem solid #ccc;
+  border-bottom: 0.01rem solid #ccc;
+}
+.mma .mma-footer ul li {
+  float: left;
+  width: 33.33%;
+  border-right: 0.01rem solid #ccc;
+}
+.mma .mma-footer ul li a {
+  display: block;
+  height: 0.4rem;
+  width: 100%;
+  line-height: 0.4rem;
+  text-align: center;
+}
+.mma .mma-footer ul li a img {
+  height: 0.15rem;
+}
+.mma .mma-footer ul li:last-child {
+  border-right: none;
+}
+.mma .mma-footer p {
+  text-align: center;
+  font-size: 0.14rem;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>慢慢买</title>
+</head>
+<script src="./js/rem.js"></script>
+<body>
+  <div class="mma">
+    
+    <div class="mma-header">
+      <div class="header-logo">
+        <img src="./images/header_logo.png" alt="" >
+      </div>
+      <div class="header-Applogo">
+        <img src="./images/header_app.png" alt=""  >
+      </div>
+    </div>
+     <div class="mma-search">
+      <input type="search" name="" id="" placeholder="请输入你想比价的商品">
+      <button>搜索</button>
+      <div class="space"></div>
+    </div>
+
+    <div class="mma-nav">
+      <ul class="clearfix">
+        <!-- 准备模板 -->
+        <script type='text/html' id='navTpl'>
+          {{each result v i}}
+          <li  data-index={{i}} class= {{i>7? 'hide':''}}><a href="{{v.titlehref}}">{{@v.img}}<p>{{v.name}}</p></a></li>
+          {{/each}}
+        </script>
+      
+      </ul>
+      <div class="nav-space"></div>
+    </div>
+    <div class="mma-recommend">
+      <div class="header">超值折扣推荐
+          <img src="http://www.zuyushop.com/wap/images/more.png" class="fr">
+      </div>
+      <div class="content">
+        <ul>
+          <script type='text/html' id='recommendTpl'>
+            {{each result v i }}
+          <li>
+            <a href="moneyproduct.html?productid={{v.productId}}">
+            <div class="left">
+              {{@v.productImgSm}}
+            </div>
+            <div class="right">
+              <p>{{v.productName}} <span class="price"> {{v.productPinkage}}</span></p>
+              <p class="from"><span>京东商城</span> | <span class="time">10-25 13:57</span> <span class="comment">{{v.productComCount}}</span></p>
+
+            </div>
+          </a>
+        </li>
+        {{/each}}
+      </script>
+        </ul>
+      </div>
+    </div>
+    <div class="mma-discount">
+      <a href="moneyctrl.html">更多优惠信息>></a>
+
+    </div>
+    <div class="mma-order">
+           <span>品牌排行</span>
+            <img src="http://www.zuyushop.com/wap/images/more.png" class="fr">   
+    </div>
+     <div class="mma-footer">
+       <ul class="clearfix">
+         <li><a href="">登录</a></li>
+         <li><a href="">注册</a></li>
+         <li><a href="javascript:;" id='goTop'>
+           <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">
+           返回顶部
+          </a></li>
+       </ul>
+       <p><span class="red">手机APP下载</span> 慢慢买手机版--掌上比价平台</p>
+       <p>m.manmanbuy.com</p>
+     </div> 
+
+  </div>
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>

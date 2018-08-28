@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./js/rem.js"></script>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/savemoney.css">
+  <link rel="stylesheet" href="./css/gsproduct.css">
+  <title>慢慢买</title>
+</head>
+<body>
+  <div class="gsproduct">
+    <!-- 头部区域 -->
+    <div class="mma-header">
+      <a href="javascript:history.go(-1)" class="left"><i class="back"></i></a>
+        凑单品
+      <div class="header-Applogo">
+        <img src="./images/header_app.png" alt=""  >
+      </div>
+    </div>  
+    <!-- 导航区域 -->
+    <div class="nav">
+     <ul>
+       <li class="navlist">
+         <a href="javascript:;" class="first" >
+            <span>京东</span>
+            <i></i>
+        </a>
+        <ul class="jd"></ul>
+      </li>
+       <li class="navlist">
+        <a href="javascript:;" class="second">
+            <span>区域</span>
+            <i></i>
+        </a>
+        <ul class="area"></ul>
+      </li>
+       <li class="navlist">
+          <a href="javascript:;" class='three'>
+            <span>全部价格</span>
+            <i></i>
+         </a>
+        <ul class="price">
+            <li>
+              <a href="">全部价格</a>
+            </li> 
+        </ul>
+      </li>
+     </ul>
+    </div>
+    <!-- //主要内容 -->
+    <div class="content">
+      <ul class="clearfix">
+        <li>
+          <a href="">
+            <img src="http://img10.360buyimg.com/n7/jfs/t577/85/103283769/55548/3ecfcbf8/5461b6e1N70e46439.jpg" alt="">
+            <p class="info">廿一客(21cake)专用餐具 1人份(不单独配送)</p>
+              <div class="product-b">
+              <span class="price">￥0.50</span>
+              <button class="buy">去购买</button>
+            </div>
+            
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="http://img10.360buyimg.com/n7/jfs/t577/85/103283769/55548/3ecfcbf8/5461b6e1N70e46439.jpg" alt="">
+            <p class="info">廿一客(21cake)专用餐具 1人份(不单独配送)</p>
+              <div class="product-b">
+              <span class="price">￥0.50</span>
+              <button class="buy">去购买</button>
+            </div>
+            
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="http://img10.360buyimg.com/n7/jfs/t577/85/103283769/55548/3ecfcbf8/5461b6e1N70e46439.jpg" alt="">
+            <p class="info">廿一客(21cake)专用餐具 1人份(不单独配送)</p>
+              <div class="product-b">
+              <span class="price">￥0.50</span>
+              <button class="buy">去购买</button>
+            </div>
+            
+          </a>
+        </li>
+     
+      </ul>
+
+      
+
+    </div>
+
+  
+     <!-- //底部 -->
+     <div class="mma-footer">
+       <ul class="clearfix">
+         <li><a href="">登录</a></li>
+         <li><a href="">注册</a></li>
+         <li><a href="javascript:;" id='goTop'>
+           <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">
+           返回顶部
+          </a></li>
+       </ul>
+       <p><span class="red">手机APP下载</span> 慢慢买手机版--掌上比价平台</p>
+       <p>m.manmanbuy.com</p>
+     </div> 
+
+
+  </div>
+  <!-- 准备模板 -->
+
+  <!-- 1、京东店铺模板 -->
+  <script type='text/html' id='navTpl'>
+    {{each  result v i}}
+    <li>
+      <a href="" data-id='{{v.shopId}}'>
+        {{v.shopName}}
+    </a>
+    </li>
+    {{/each}}
+  </script>
+
+  <!-- 2、区域模板 -->
+  <script type='text/html' id='areaTpl'>
+  {{each result v i}}
+  <li><a href="" data-areaid='{{v.areaId}}'>{{v.areaName}}</a></li>
+  {{/each}}
+  </script> 
+
+  <!-- //商品列表模板 -->
+  <script type='text/html' id='productTpl'>
+    {{each result v i}}
+    <li>
+      <a href="">
+          <img src="{{v.productImg}}" alt="">
+          <p class="info">{{v.productName}}</p>
+            <div class="product-b">
+            <span class="price">￥{{v.productPrice}}</span>
+            <button class="buy">去购买</button>
+          </div>
+        </a>
+
+    </li>
+    {{/each}}
+    </script> 
+
+
+
+
+
+
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/gsproduct.js"></script>
+</body>
+</html>

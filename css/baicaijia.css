@@ -1,0 +1,176 @@
+body {
+  background-color: #F5F5F5;
+}
+.bacaijia {
+  max-width: 7.5rem;
+  min-width: 3.5rem;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 0.14rem;
+  overflow: hidden;
+  position: relative;
+}
+.bacaijia .mma-header {
+  font-size: 0.3rem;
+  color: #fff;
+  text-align: center;
+  line-height: 0.8rem;
+  position: relative;
+  background-color: #F4483E;
+  font-weight: 700;
+}
+.bacaijia .mma-header .left {
+  position: absolute;
+  left: 0.25rem;
+  top: 0.25rem;
+  height: 0.5rem;
+  width: 0.5rem;
+  font-size: 50px;
+  color: #fff;
+  background: url('../images/icback.svg') no-repeat;
+}
+.bacaijia .nav {
+  width: 100%;
+  height: 0.5rem;
+  background-image: linear-gradient(#F5F5F5, #F5F5F5);
+  background-color: #F5F5F5;
+  border: none;
+}
+.bacaijia .nav ul li {
+  float: left;
+}
+.bacaijia .nav ul li a {
+  font-size: 0.18rem;
+  display: block;
+  height: 0.5rem;
+  width: 1rem;
+  line-height: 0.5rem;
+  text-align: center;
+  color: #000;
+}
+.bacaijia .nav ul li a:hover {
+  color: #F4483E;
+  border-bottom: 3px solid #F4483E;
+}
+.bacaijia .content ul li {
+  padding: 0.2rem;
+  background-color: #fff;
+  padding-left: 2rem;
+  margin-top: 0.1rem;
+  position: relative;
+  height: 2.4rem;
+}
+.bacaijia .content ul li .left {
+  padding-top: 0.2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2rem;
+}
+.bacaijia .content ul li .left img {
+  width: 1.8rem ;
+}
+.bacaijia .content ul li .right {
+  padding: 0.2rem;
+  width: 100%;
+  font-size: 0.24rem;
+}
+.bacaijia .content ul li .right > a:nth-of-type(2) {
+  margin-right: 0.3rem;
+  display: inline-block;
+  width: 1.2rem;
+  height: 0.5rem;
+  background-color: #FF5E5D;
+  color: #fff;
+  font-size: 0.2rem;
+  line-height: 0.5rem;
+  border-radius: 0.05rem;
+  text-align: center;
+  float: right;
+}
+.bacaijia .content ul li .right > a:nth-of-type(1) {
+  margin-right: 0.3rem;
+  display: inline-block;
+  padding: 0 0.15rem;
+  height: 0.5rem;
+  color: #000;
+  font-size: 0.2rem;
+  line-height: 0.5rem;
+  text-align: center;
+  border: 1px dashed red;
+}
+.bacaijia .content ul li .right .price {
+  color: red;
+  font-size: 0.3rem;
+}
+.bacaijia .content ul li .right .price i {
+  font-size: 0.25rem;
+}
+.bacaijia .content ul li .right i {
+  color: red;
+  font-style: normal;
+}
+.bacaijia .content ul li .right i span {
+  font-size: 0.18rem;
+  color: #fff;
+}
+.bacaijia .content ul li .right i + b {
+  color: red;
+  position: relative;
+  top: -0.05rem;
+  left: 0.05rem;
+}
+.bacaijia .content ul li .right del {
+  font-size: 0.16rem;
+  margin-left: 0.05rem;
+}
+.bacaijia .content ul li .right .b {
+  color: #000;
+}
+.bacaijia .content ul li .right em {
+  color: red;
+  font-size: 0.14rem;
+  font-style: normal;
+}
+.bacaijia .content ul li .right strong {
+  color: red;
+  font-size: 0.3rem;
+  font-weight: 400;
+}
+.bacaijia .content ul li .right del {
+  color: #bbb;
+  text-decoration: line-through;
+}
+.bacaijia .content ul .bar {
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+.bacaijia .content ul .bar i {
+  float: left;
+  height: 0.25rem;
+  width: 1.5rem;
+  background-color: #FFB7B7;
+  border: 1px solid red;
+  border-radius: 0.1rem;
+  position: relative;
+}
+.bacaijia .content ul .bar i em {
+  display: block;
+  height: 100%;
+  background-color: #FC353A;
+  border-radius: 0.1rem 0.1rem 0.1rem 0.1rem;
+}
+.bacaijia .content ul .bar i span {
+  color: #fff;
+  width: 0.25rem;
+  height: 0.25rem;
+  line-height: 0.25rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -0.125rem;
+  top: 0;
+}
+.bacaijia .mma-footer {
+  padding-top: 0;
+  margin-top: 0.5rem;
+}
